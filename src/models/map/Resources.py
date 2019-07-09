@@ -1,0 +1,162 @@
+from src.models.items.Item import Item, ItemType
+
+
+class Resource(Item):
+
+    def __init__(self):
+        super().__init__()
+        self.type = ItemType.Resource
+        self.resource_tier = 1
+        self.resource_name = ""
+        self.happynes_multiplyer = 1
+        self.strong_multiplyer = 1
+        self.nutrien_multiplyer = 1
+
+
+class Potatos(Resource):
+
+    def __init__(self):
+        super().__init__()
+
+
+class Corns(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.nutrien_multiplyer = 1.1
+
+
+class Wood(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 0.5
+
+
+class Stone(Resource):
+
+    def __init__(self):
+        super().__init__()
+
+
+class Wool(Resource):
+
+    def __init__(self):
+        super().__init__()
+
+
+class Shugar(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.happynes_multiplyer = 1.3
+        self.nutrien_multiplyer = 1.1
+
+
+class Fruits(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.happynes_multiplyer = 1.1
+        self.nutrien_multiplyer = 1.1
+
+
+class Pigs(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.nutrien_multiplyer = 1.3
+
+
+class Lamb(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.nutrien_multiplyer = 1.2
+
+
+class Strobery(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.happynes_multiplyer = 1.2
+        self.nutrien_multiplyer = 1.1
+
+
+class Ambrosia(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.happynes_multiplyer = 1.2
+        self.nutrien_multiplyer = 1.1
+
+
+class Metal(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 1.5
+
+
+class Gold(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 0.5
+
+
+class Silver(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 0.5
+
+
+class Spidersilk(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 1.5
+
+
+class Meefreel(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 2
+
+
+class Coal(Resource):
+
+    def __init__(self):
+        super().__init__()
+
+
+class Redwood(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 1.3
+        self.happynes_multiplyer = 1.3
+
+
+class Mrecury(Resource):
+
+    def __init__(self):
+        super().__init__()
+
+
+class Plasteel(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplyer = 2
+
+
+first_tier_food_resource = {Potatos(), Corns(), Lamb(), Fruits()}
+first_tier_material_resource = {Stone(), Wood(), Metal(), Wool()}
+
+second_tier_food_resource = {Shugar(), Ambrosia(), Strobery()}
+second_tier_material_resource = {Coal(), Mrecury(), Redwood(), Plasteel(), Spidersilk(), Silver(), Gold(), Spidersilk()}
+
+third_tier_material_resource = {Meefreel(), Plasteel()}
