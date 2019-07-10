@@ -29,6 +29,7 @@ def itit_game(server: GameServer, users):
     new_game.user_game_models = {i.user_id: i for i in game_models_list}
     new_game.map.fill_map(users)
     server.games.append(new_game)
+    return new_game
 
 
 def _create_test_user(id):

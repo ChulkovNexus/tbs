@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a294a28-87d1-4476-bcef-08f41e583840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game_mutators/ResourceCountChanger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/items/buildings/Building.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/map/Direction.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tasks/TasksSchedule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tasks/availability_callbacks/ExtractResourceTaskAvailabilityManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/tasks/availability_callbacks/ResorceDependendTasksManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game_mutators/TaskExecutor.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_mutators/TaskManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Person.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/UserGameModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserGameModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/items/Item.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/Item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/items/ItemsStack.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/ItemsStack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/map/Map.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/map/Map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/map/MapTile.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/map/MapTile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/map/Resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/map/Resources.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tasks/ExtractResource.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/ExtractResource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tasks/Task.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/Task.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,25 +22,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="79" />
+          <entry key="py" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="79" />
+          <entry key="Python" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="327" />
           <entry key="dummy" value="79" />
-          <entry key="py" value="7679" />
+          <entry key="py" value="7816" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="79" />
-          <entry key="Python" value="8006" />
+          <entry key="Python" value="8143" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+            <state relative-caret-position="255">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
                 <marker date="1562763948679" expanded="true" signature="741:746" ph="..." />
@@ -80,13 +61,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/items/ItemsStack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="17">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
                 <marker date="1562763948665" expanded="true" signature="99:105" ph="..." />
               </folding>
             </state>
@@ -122,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game_mutators/TaskManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
                 <marker date="1562761894970" expanded="true" signature="122:123" ph="..." />
@@ -133,11 +113,53 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/models/Game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+                <marker date="1562768178666" expanded="true" signature="165:204" ph="..." />
+                <marker date="1562768178666" expanded="true" signature="215:216" ph="..." />
+                <marker date="1562768178666" expanded="true" signature="215:221" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game_mutators/GameInitializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <marker date="1562768071407" expanded="true" signature="228:377" ph="..." />
+                <marker date="1562768071407" expanded="true" signature="564:801" ph="..." />
+                <marker date="1562768071407" expanded="true" signature="1053:1136" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/map/Map.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <marker date="1562760865865" expanded="true" signature="738:879" ph="..." />
@@ -203,7 +225,6 @@
         <option value="$PROJECT_DIR$/src/models/GameServer.py" />
         <option value="$PROJECT_DIR$/src/GameServer.py" />
         <option value="$PROJECT_DIR$/src/models/Map.py" />
-        <option value="$PROJECT_DIR$/src/__init__.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/TaskExecutor.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/ExtractResource.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/TasksSchedule.py" />
@@ -221,8 +242,6 @@
         <option value="$PROJECT_DIR$/src/models/map/MapTile.py" />
         <option value="$PROJECT_DIR$/src/models/map/Direction.py" />
         <option value="$PROJECT_DIR$/src/models/map/Map.py" />
-        <option value="$PROJECT_DIR$/src/models/Game.py" />
-        <option value="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/TaskManager.py" />
         <option value="$PROJECT_DIR$/src/models/UserGameModel.py" />
         <option value="$PROJECT_DIR$/src/models/items/wearables/WearableItem.py" />
@@ -230,6 +249,9 @@
         <option value="$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py" />
         <option value="$PROJECT_DIR$/src/models/items/Item.py" />
         <option value="$PROJECT_DIR$/src/models/items/ItemsStack.py" />
+        <option value="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" />
+        <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/src/models/Game.py" />
       </list>
     </option>
   </component>
@@ -393,16 +415,6 @@
     <entry file="file://$PROJECT_DIR$/src/game_mutators/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/tasks/availability_callbacks/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -527,32 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/GameInitializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1562761548097" expanded="true" signature="228:377" ph="..." />
-            <marker date="1562761548097" expanded="true" signature="564:801" ph="..." />
-            <marker date="1562761548097" expanded="true" signature="1033:1116" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1562761548102" expanded="true" signature="83:122" ph="..." />
-            <marker date="1562761548102" expanded="true" signature="133:134" ph="..." />
-            <marker date="1562761548102" expanded="true" signature="133:139" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game_mutators/ResourceCountChanger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -560,33 +546,6 @@
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <marker date="1562754579658" expanded="true" signature="122:128" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/map/Map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <marker date="1562760865865" expanded="true" signature="738:879" ph="..." />
-            <marker date="1562760865865" expanded="true" signature="2960:2962" ph="..." />
-            <marker date="1562760865865" expanded="true" signature="3288:3464" ph="..." />
-            <marker date="1562760865865" expanded="true" signature="3498:3859" ph="..." />
-            <marker date="1562760865865" expanded="true" signature="3854:3855" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/TaskManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1562761894970" expanded="true" signature="122:123" ph="..." />
-            <marker date="1562761894970" expanded="true" signature="153:158" ph="..." />
           </folding>
         </state>
       </provider>
@@ -601,18 +560,6 @@
           <folding>
             <element signature="e#0#50#0" expanded="true" />
             <marker date="1562761894961" expanded="true" signature="427:433" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1562763948679" expanded="true" signature="741:746" ph="..." />
-            <marker date="1562763948679" expanded="true" signature="2004:2017" ph="..." />
           </folding>
         </state>
       </provider>
@@ -648,11 +595,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/items/ItemsStack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
           <folding>
-            <element signature="e#0#33#0" expanded="true" />
             <marker date="1562763948665" expanded="true" signature="99:105" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/map/Map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1562760865865" expanded="true" signature="738:879" ph="..." />
+            <marker date="1562760865865" expanded="true" signature="2960:2962" ph="..." />
+            <marker date="1562760865865" expanded="true" signature="3288:3464" ph="..." />
+            <marker date="1562760865865" expanded="true" signature="3498:3859" ph="..." />
+            <marker date="1562760865865" expanded="true" signature="3854:3855" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_mutators/GameInitializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1562768071407" expanded="true" signature="228:377" ph="..." />
+            <marker date="1562768071407" expanded="true" signature="564:801" ph="..." />
+            <marker date="1562768071407" expanded="true" signature="1053:1136" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_mutators/TaskManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1562761894970" expanded="true" signature="122:123" ph="..." />
+            <marker date="1562761894970" expanded="true" signature="153:158" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1562763948679" expanded="true" signature="741:746" ph="..." />
+            <marker date="1562763948679" expanded="true" signature="2004:2017" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+            <marker date="1562768178666" expanded="true" signature="165:204" ph="..." />
+            <marker date="1562768178666" expanded="true" signature="215:216" ph="..." />
+            <marker date="1562768178666" expanded="true" signature="215:221" ph="..." />
           </folding>
         </state>
       </provider>
