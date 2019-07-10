@@ -1,4 +1,5 @@
 from src.models.items import Item
+from src.models.map.Resources import Resource
 
 
 class ItemsStack:
@@ -23,3 +24,6 @@ class ItemsStack:
     def move_item(self, item: Item, to_items_stack, move_count: int):
         self.remove(item, move_count)
         to_items_stack.add_item(item, move_count)
+
+    def get_resources(self):
+        return {itemType: count for itemType, count in self._items.items() if issubclass(itemType, Resource)}

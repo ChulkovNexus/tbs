@@ -12,6 +12,6 @@ class Game:
 
     def __init__(self):
         self.game_id = 0
-        self.user_game_models = list()
+        self.user_game_models = {}
         self.map = Map()
         self.status = GameStatus.INITIAL

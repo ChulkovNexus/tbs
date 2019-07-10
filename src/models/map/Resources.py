@@ -1,3 +1,5 @@
+import itertools
+
 from src.models.items.Item import Item, ItemType
 
 
@@ -160,3 +162,5 @@ second_tier_food_resource = {Shugar(), Ambrosia(), Strobery()}
 second_tier_material_resource = {Coal(), Mrecury(), Redwood(), Plasteel(), Spidersilk(), Silver(), Gold(), Spidersilk()}
 
 third_tier_material_resource = {Meefreel(), Plasteel()}
+
+all_resources = list(itertools.chain(first_tier_food_resource, first_tier_material_resource, second_tier_food_resource, second_tier_material_resource, third_tier_material_resource))

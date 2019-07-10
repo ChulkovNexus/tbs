@@ -1,5 +1,6 @@
 from abc import abstractmethod
 
+from src.models.Person import Person
 from src.models.UserGameModel import UserGameModel
 from src.models.map.Map import Map
 
@@ -8,6 +9,7 @@ class Task:
 
     def __init__(self):
         self.descr = ""
+        self.game_model = None
         self.turns_count = 1
         self.needed_items = list()
         self.buildings = list()
@@ -15,8 +17,11 @@ class Task:
         self.result_buildings = list()
         self.result_incomes = list()
 
-    def execute(self, user_game_model: UserGameModel):
-        pass
+    def execute(self, user_game_model: UserGameModel, person: Person):
+        self.game_model = user_game_model
 
     @abstractmethod
-    def check_conditions(self, map: Map, user_game_model: UserGameModel): raise NotImplementedError
+    def check_conditions(self, map: Map, user_game_model: UserGameModel, person: Person): raise NotImplementedError
+
+    @abstractmethod
+    def get_resources_for_consume(self): raise NotImplementedError
