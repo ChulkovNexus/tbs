@@ -1,3 +1,4 @@
+from src.models.person.medicine.character_health import CharacterHealth
 from src.models.tasks.TasksSchedule import TaskSchedule
 
 
@@ -13,6 +14,8 @@ class Person:
         self.priest_skill = None
         self.economist_skill = None
         self.craft_skill = None
+        self.buffs = list()
+        self.health = CharacterHealth(self)
 
     def on_append_to_user(self, user_game_model):
         self.tasks_schedule.resource_count_changer = user_game_model.resource_count_changer

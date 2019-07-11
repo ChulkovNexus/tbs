@@ -4,6 +4,7 @@ from enum import Enum
 from src.game_mutators import TaskManager, SpredInfluenceManager
 from src.game_mutators.bot import Bot
 from src.models.map.Map import Map
+from src.models.person.medicine import MedicineProcessor
 
 
 class GameStatus(Enum):
@@ -29,6 +30,7 @@ class Game:
         self.status = GameStatus.IN_PROGRESS
         self.start_turn_timer()
         TaskManager.execute_tasks(self)
+        MedicineProcessor.process_turn(self.user_game_models)
         SpredInfluenceManager.process_turn(self)
         Bot.choose_tasks(self)
 

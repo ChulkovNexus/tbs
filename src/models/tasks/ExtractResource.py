@@ -14,7 +14,7 @@ class ExtractResource(Task):
 
     def execute(self, user_game_model, person: Person):
         extract_count = person.gatherer_skill.change_value_by_skill(DEFAULT_EXTRACT_VALUE)
-        person.gatherer_skill.experience += self.resource.resource_tier
+        user_game_model.experience_increaser.increase_experience(self.resource.resource_tier, person, person.gatherer_skill)
         user_game_model.resource_count_changer.extract_resources({self.resource: int(extract_count)})
 
     def check_conditions(self, map: Map, user_game_model, person: Person):

@@ -37,6 +37,13 @@ class Wood(Resource):
         self.strong_multiplier = 0.5
 
 
+class Sand(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.strong_multiplier = 0.5
+
+
 class Stone(Resource):
 
     def __init__(self):
@@ -87,6 +94,13 @@ class Strobery(Resource):
         self.resource_tier = 2
         self.happynes_multiplier = 1.2
         self.nutrien_multiplier = 1.1
+
+
+class Hop(Resource):
+
+    def __init__(self):
+        super().__init__()
+        self.resource_tier = 2
 
 
 class Ambrosia(Resource):
@@ -169,8 +183,8 @@ class Plasteel(Resource):
 
 
 first_tier_food_resource = [Potatos(), Corns(), Lamb(), Fruits()]
-first_tier_material_resource = [Stone(), Wood(), Metal(), Wool()]
-second_tier_food_resource = [Shugar(), Ambrosia(), Strobery()]
+first_tier_material_resource = [Stone(), Wood(), Metal(), Sand(), Wool()]
+second_tier_food_resource = [Shugar(), Ambrosia(), Strobery(), Hop()]
 second_tier_material_resource = [Coal(), Mercury(), Redwood(), Spidersilk(), Silver(), Gold()]
 third_tier_material_resource = [Meefreel(), Plasteel()]
 

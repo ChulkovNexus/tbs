@@ -1,3 +1,4 @@
+from src.game_mutators.ExperienceIncreaser import ExperienceIncreaser
 from src.game_mutators.ResourceCountChanger import ResourceCountChanger
 from src.models.PersonsStack import PersonsStack
 from src.models.items.ItemsStack import ItemsStack
@@ -16,6 +17,7 @@ class UserGameModel:
         self.pos_y = 0
         self.logger = UserModelLogger()
         self.resource_count_changer = ResourceCountChanger(self)
+        self.experience_increaser = ExperienceIncreaser(self)
         self.persons = PersonsStack(self)
         self.items = ItemsStack()
         self.buildings = list()
