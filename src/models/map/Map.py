@@ -111,10 +111,10 @@ class Map:
             if x % 2 == 0:
                 for y, tile in enumerate(row):
                     if x % 2 == 0 and x != 2 and y != 2:
-                        tile.userIdTown = users[counter].user_id
-                        tile.religionUserId = users[counter].user_id
-                        tile.economicDominationUserId = users[counter].user_id
-                        tile.warUserId = users[counter].user_id
+                        tile.userIdTown = users[counter].id
+                        tile.religionUserId = users[counter].id
+                        tile.economicDominationUserId = users[counter].id
+                        tile.warUserId = users[counter].id
                         tile.warInfluence = MAX_INFLUENCE
                         tile.economicInfluence = MAX_INFLUENCE
                         tile.religionInfluence = MAX_INFLUENCE
@@ -123,7 +123,7 @@ class Map:
         self.fill_map_with_resources()
 
     def get_tiles_with_economic_influence(self, user_id):
-        if self.economic_influence_cache[user_id]:
+        if user_id in self.economic_influence_cache:
             return self.economic_influence_cache[user_id]
         result = list()
         for row in self.map:
@@ -135,7 +135,7 @@ class Map:
         return result
 
     def get_tiles_with_religion_influence(self, user_id):
-        if self.religion_influence_cache[user_id]:
+        if user_id in self.religion_influence_cache:
             return self.religion_influence_cache[user_id]
         result = list()
         for row in self.map:
@@ -146,7 +146,7 @@ class Map:
         return result
 
     def get_tiles_with_war_influence(self, user_id):
-        if self.war_influence_cache[user_id]:
+        if user_id in self.war_influence_cache:
             return self.war_influence_cache[user_id]
         result = list()
         for row in self.map:
@@ -157,7 +157,7 @@ class Map:
         return result
 
     def get_user_resources(self, user_id):
-        if self.resources_cache[user_id]:
+        if user_id in self.resources_cache:
             return self.resources_cache[user_id]
         result = list()
         tiles = self.get_tiles_with_economic_influence(user_id)

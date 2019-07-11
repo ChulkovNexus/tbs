@@ -1,19 +1,20 @@
 import itertools
 
-from src.models.items.Item import Item, ItemType
+from src.models.items.Item import Item
 
 
 class Resource(Item):
 
     def __init__(self):
         super().__init__()
-        self.type = ItemType.Resource
         self.resource_tier = 1
-        self.resource_name = ""
+        self.resource_name = type(self).__name__
         self.happynes_multiplyer = 1
         self.strong_multiplyer = 1
         self.nutrien_multiplyer = 1
 
+    def __repr__(self):
+        return self.resource_name
 
 class Potatos(Resource):
 
@@ -155,12 +156,10 @@ class Plasteel(Resource):
         self.strong_multiplyer = 2
 
 
-first_tier_food_resource = {Potatos(), Corns(), Lamb(), Fruits()}
-first_tier_material_resource = {Stone(), Wood(), Metal(), Wool()}
-
-second_tier_food_resource = {Shugar(), Ambrosia(), Strobery()}
-second_tier_material_resource = {Coal(), Mrecury(), Redwood(), Plasteel(), Spidersilk(), Silver(), Gold(), Spidersilk()}
-
-third_tier_material_resource = {Meefreel(), Plasteel()}
+first_tier_food_resource = [Potatos(), Corns(), Lamb(), Fruits()]
+first_tier_material_resource = [Stone(), Wood(), Metal(), Wool()]
+second_tier_food_resource = [Shugar(), Ambrosia(), Strobery()]
+second_tier_material_resource = [Coal(), Mrecury(), Redwood(), Plasteel(), Spidersilk(), Silver(), Gold(), Spidersilk()]
+third_tier_material_resource = [Meefreel(), Plasteel()]
 
 all_resources = list(itertools.chain(first_tier_food_resource, first_tier_material_resource, second_tier_food_resource, second_tier_material_resource, third_tier_material_resource))

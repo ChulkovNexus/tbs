@@ -1,8 +1,7 @@
-from src.models.Game import Game
 from src.models.map.MapTile import MAX_INFLUENCE
 
 
-def update_influences(game: Game):
+def update_influences(game):
     for user_id, user_game_model in game.user_game_models.items():
         user_game_model.war_influence_income = 0
         user_game_model.religion_influence_income = 0
@@ -13,14 +12,14 @@ def update_influences(game: Game):
             user_game_model.religion_influence_income += building.religion_influence()
 
 
-def process_turn(game: Game):
+def process_turn(game):
     game.map.clear_chaches()
     update_influences(game)
     for row in game.map.map:
         for tile in row:
-            religion_influences = {}
-            war_influences = {}
-            econom_influences = {}
+            religion_influences = {i: 0 for i in game.user_game_models}
+            war_influences = {i: 0 for i in game.user_game_models}
+            econom_influences = {i: 0 for i in game.user_game_models}
 
             if tile.userIdTown != -1:
                 econom_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].economic_influence_income

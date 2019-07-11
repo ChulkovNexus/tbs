@@ -8,11 +8,15 @@ class ItemsStack:
         self._items = {}
 
     def add_item(self, item: Item, add_count=1):
-        count = self._items[item.type] or 0
+        count = 0
+        if item.type in self._items:
+            count = self._items[item.type]
         self._items[item.type] = count + add_count
 
     def remove(self, item: Item, remove_count=1):
-        count = self._items[item.type] or 0
+        count = 0
+        if item.type in self._items:
+            count = self._items[item.type]
         if count < remove_count:
             raise ValueError('not enough items in items stack')
         else:
