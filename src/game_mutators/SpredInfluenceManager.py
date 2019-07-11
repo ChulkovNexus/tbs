@@ -3,13 +3,13 @@ from src.models.map.MapTile import MAX_INFLUENCE
 
 def update_influences(game):
     for user_id, user_game_model in game.user_game_models.items():
-        user_game_model.war_influence_income = 0
-        user_game_model.religion_influence_income = 0
-        user_game_model.economic_influence_income = 0
+        user_game_model.war_influence.influence_income = 0
+        user_game_model.religion_influence.influence_income = 0
+        user_game_model.economic_influence.influence_income = 0
         for building in user_game_model.buildings:
-            user_game_model.war_influence_income += building.get_war_influence()
-            user_game_model.economic_influence_income += building.get_economic_influence()
-            user_game_model.religion_influence_income += building.religion_influence()
+            user_game_model.war_influence.influence_income += building.get_war_influence()
+            user_game_model.economic_influence.influence_income += building.get_economic_influence()
+            user_game_model.religion_influence.influence_income += building.religion_influence()
 
 
 def process_turn(game):
@@ -22,20 +22,20 @@ def process_turn(game):
             econom_influences = {i: 0 for i in game.user_game_models}
 
             if tile.userIdTown != -1:
-                econom_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].economic_influence_income
-                war_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].war_influence_income
-                religion_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].religion_influence_income
+                econom_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].economic_influence.influence_income
+                war_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].war_influence.influence_income
+                religion_influences[tile.userIdTown] += game.user_game_models[tile.userIdTown].religion_influence.influence_income
 
             neghbours = game.map.get_neighbours(tile)
             for neghbour in neghbours:
                 if neghbour.economicInfluence == MAX_INFLUENCE:
-                    econom_influences[neghbour.economicDominationUserId] += game.user_game_models[neghbour.economicDominationUserId].economic_influence_income
+                    econom_influences[neghbour.economicDominationUserId] += game.user_game_models[neghbour.economicDominationUserId].economic_influence.influence_income
 
                 if neghbour.religionInfluence == MAX_INFLUENCE:
-                    war_influences[neghbour.religionUserId] += game.user_game_models[neghbour.economicDominationUserId].war_influence_income
+                    war_influences[neghbour.religionUserId] += game.user_game_models[neghbour.economicDominationUserId].war_influence.influence_income
 
                 if neghbour.warInfluence == MAX_INFLUENCE:
-                    religion_influences[neghbour.warUserId] += game.user_game_models[neghbour.warUserId].religion_influence_income
+                    religion_influences[neghbour.warUserId] += game.user_game_models[neghbour.warUserId].religion_influence.influence_income
 
             max_influence_income = -1
             second_after_max = -1

@@ -1,10 +1,9 @@
 import threading
 from enum import Enum
 
-from src.game_mutators import TaskManager, SpredInfluenceManager
+from src.game_mutators import TaskManager, SpredInfluenceManager, MedicineProcessor
 from src.game_mutators.bot import Bot
 from src.models.map.Map import Map
-from src.models.person.medicine import MedicineProcessor
 
 
 class GameStatus(Enum):

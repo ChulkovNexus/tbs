@@ -1,6 +1,7 @@
 from src.game_mutators.ExperienceIncreaser import ExperienceIncreaser
 from src.game_mutators.ResourceCountChanger import ResourceCountChanger
-from src.models.PersonsStack import PersonsStack
+from src.models.Influence import Influence
+from src.models.person.PersonsStack import PersonsStack
 from src.models.items.ItemsStack import ItemsStack
 from src.models.tasks.availability_callbacks.BuildingsDependendTasksManager import BuildingsDependendTasksManager
 from src.models.tasks.availability_callbacks.ExtractResourceTaskAvailabilityManager import ExtractResourceTaskAvailabilityManager
@@ -21,9 +22,9 @@ class UserGameModel:
         self.persons = PersonsStack(self)
         self.items = ItemsStack()
         self.buildings = list()
-        self.war_influence_income = 0
-        self.economic_influence_income = 0
-        self.religion_influence_income = 0
+        self.war_influence = Influence()
+        self.economic_influence = Influence()
+        self.religion_influence = Influence()
         self.buildings_dependend_tasks_manager = BuildingsDependendTasksManager()
         self.extract_resource_availability_manager = ExtractResourceTaskAvailabilityManager()
         self.resorce_dependend_tasks_manager = ResorceDependendTasksManager()

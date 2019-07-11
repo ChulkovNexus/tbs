@@ -1,5 +1,5 @@
 from src.models.person.medicine.body_parts import create_human_body
-from src.models.person.medicine.MedicineProcessor import max_blood_count
+from src.game_mutators.MedicineProcessor import max_blood_count
 
 
 class CharacterHealth:
