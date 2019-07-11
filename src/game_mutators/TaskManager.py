@@ -6,11 +6,14 @@ def execute_tasks(game):
     for user_id, user_game_model in game.user_game_models.items():
         for person in user_game_model.persons:
             if person.tasks_schedule:
-                last_task = person.tasks_schedule.pop(0)
-                if last_task.check_conditions(game.map, user_game_model, person):
-                    last_task.execute(user_game_model, person)
+                if person.tasks_schedule[0].turns_count == 1:
+                    last_task = person.tasks_schedule.pop(0)
+                    if last_task.check_conditions(game.map, user_game_model, person):
+                        last_task.execute(user_game_model, person)
+                    else:
+                        raise ValueError('task check condition failure on execute')
                 else:
-                    raise ValueError('task check condition failure on execute')
+                    person.tasks_schedule[0].turns_count -= 1
             person.recalculate_experience()
     update_available_tasks_after_process_turn(game)
 
