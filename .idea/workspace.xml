@@ -497,6 +497,7 @@
       <find>war_influence_income</find>
       <find>religion_influence_income</find>
       <find>economic_influence</find>
+      <find>task_not_needed_buildings</find>
     </findStrings>
     <replaceStrings>
       <replace>w_influence</replace>

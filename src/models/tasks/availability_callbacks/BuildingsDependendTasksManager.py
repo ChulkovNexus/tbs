@@ -5,7 +5,7 @@ from src.models.tasks.CreateBuildingTask import CreateBuilding
 task_not_needed_buildings = [CreateBuilding(Sawmill())]
 
 
-class BuildingsDependendTasksManager:
+class BuildingsDependedTasksManager:
 
     def __init__(self):
         self._task_list = list()

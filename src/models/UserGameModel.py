@@ -3,7 +3,7 @@ from src.game_mutators.ResourceCountChanger import ResourceCountChanger
 from src.models.Influence import Influence
 from src.models.person.PersonsStack import PersonsStack
 from src.models.items.ItemsStack import ItemsStack
-from src.models.tasks.availability_callbacks.BuildingsDependendTasksManager import BuildingsDependendTasksManager
+from src.models.tasks.availability_callbacks.BuildingsDependendTasksManager import BuildingsDependedTasksManager
 from src.models.tasks.availability_callbacks.ExtractResourceTaskAvailabilityManager import ExtractResourceTaskAvailabilityManager
 from src.models.tasks.availability_callbacks.ResorceDependendTasksManager import ResorceDependendTasksManager
 from src.utils.UserModelLogger import UserModelLogger
@@ -25,7 +25,7 @@ class UserGameModel:
         self.war_influence = Influence()
         self.economic_influence = Influence()
         self.religion_influence = Influence()
-        self.buildings_dependend_tasks_manager = BuildingsDependendTasksManager()
+        self.buildings_dependend_tasks_manager = BuildingsDependedTasksManager()
         self.extract_resource_availability_manager = ExtractResourceTaskAvailabilityManager()
         self.resorce_dependend_tasks_manager = ResorceDependendTasksManager()
 
