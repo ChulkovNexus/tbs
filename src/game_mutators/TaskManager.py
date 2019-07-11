@@ -1,4 +1,4 @@
-from src.models.Person import Person
+from src.models.person.Person import Person
 from src.models.UserGameModel import UserGameModel
 
 
@@ -9,6 +9,9 @@ def execute_tasks(game):
                 last_task = person.tasks_schedule.pop(0)
                 if last_task.check_conditions(game.map, user_game_model, person):
                     last_task.execute(user_game_model, person)
+                else:
+                    raise ValueError('task check condition failure on execute')
+            person.recalculate_experience()
     update_available_tasks_after_process_turn(game)
 
 

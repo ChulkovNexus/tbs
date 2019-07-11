@@ -1,6 +1,6 @@
 from abc import abstractmethod
 
-from src.models.Person import Person
+from src.models.person.Person import Person
 from src.models.map.Map import Map
 
 

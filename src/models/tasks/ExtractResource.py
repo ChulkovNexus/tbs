@@ -1,7 +1,9 @@
-from src.models.Person import Person
+from src.models.person.Person import Person
 from src.models.map import Map
 from src.models.map.Resources import Resource
 from src.models.tasks.Task import Task
+
+DEFAULT_EXTRACT_VALUE = 10
 
 
 class ExtractResource(Task):
@@ -11,7 +13,9 @@ class ExtractResource(Task):
         self.resource = resource
 
     def execute(self, user_game_model, person: Person):
-        user_game_model.resource_count_changer.extract_resources({self.resource: 10})
+        extract_count = person.gatherer_skill.change_value_by_skill(DEFAULT_EXTRACT_VALUE)
+        person.gatherer_skill.experience += self.resource.resource_tier
+        user_game_model.resource_count_changer.extract_resources({self.resource: int(extract_count)})
 
     def check_conditions(self, map: Map, user_game_model, person: Person):
         tiles = map.get_tiles_with_economic_influence(user_game_model.user_id)
@@ -23,3 +27,6 @@ class ExtractResource(Task):
 
     def __repr__(self):
         return f"ExtractResource {self.resource}"
+
+    def get_resources_for_consume(self):
+        pass

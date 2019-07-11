@@ -1,14 +1,28 @@
+import random
+
 from src import GameServer
 from src.game_mutators import TaskManager
 from src.models.Game import Game
-from src.models.Person import Person
+from src.models.person.Person import Person
 from src.models.UserGameModel import UserGameModel
 from src.models.UserModel import UserModel
+from src.models.person.Skill import Skill
+
+
+class SkillPointsHolder:
+    def __init__(self):
+        self.poins = 20
+
+    def get_rand_int(self):
+        randint = random.randint(0, 5)
+        skill_poins = self.poins - randint
+        return 0 if skill_poins < 0 else randint
 
 
 def _create_persons_for_new_game(persons_stack):
     for i in range(0, 3):
-        new_person = Person()
+        new_person = Person(i)
+        _fill_skills(new_person)
         persons_stack.append(new_person)
 
 
@@ -19,6 +33,9 @@ def _log_initial_params(game):
 
         if user_id != 0:
             user_game_model.logger.enabled = False
+
+        for i, person in enumerate(user_game_model.persons):
+            person.log_skill_levels(user_game_model.logger)
 
 
 def itit_game(server: GameServer, users):
@@ -47,6 +64,29 @@ def _create_test_user(id):
     user.id = id
     user.name = str(id)
     return user
+
+
+def _fill_skills(person):
+    skill_points = SkillPointsHolder()
+    person.gatherer_skill = Skill(skill_points.get_rand_int())
+    person.scientist_skill = Skill(skill_points.get_rand_int())
+    person.warrior_skill = Skill(skill_points.get_rand_int())
+    person.priest_skill = Skill(skill_points.get_rand_int())
+    person.economist_skill = Skill(skill_points.get_rand_int())
+    person.craft_skill = Skill(skill_points.get_rand_int())
+    if skill_points.poins > 0:
+        person.gatherer_skill.level += 1
+        person.scientist_skill.level += 1
+        person.warrior_skill.level += 1
+        person.priest_skill.level += 1
+        person.economist_skill.level += 1
+        person.craft_skill.level += 1
+    person.gatherer_skill.set_experience_from_level()
+    person.scientist_skill.set_experience_from_level()
+    person.warrior_skill.set_experience_from_level()
+    person.priest_skill.set_experience_from_level()
+    person.economist_skill.set_experience_from_level()
+    person.craft_skill.set_experience_from_level()
 
 
 def generate_test_users():
