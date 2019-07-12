@@ -33,7 +33,7 @@ def update_emergencies(user_game_model, char):
         char.buffs.append(disabled_by_injuries_buff)
     elif char.health.pain_level >= default_pain_threshold:
         char.buffs.append(disabled_by_injuries_buff)
-    elif char.health.pain_level < default_pain_threshold and char.health.blood_count > blood_loss_threshold:
+    elif char.health.pain_level < default_pain_threshold and char.health.blood_count > blood_loss_threshold and disabled_by_injuries_buff in char.buffs:
         char.buffs.remove(disabled_by_injuries_buff)
 
     if char.health.blood_count <= 0:

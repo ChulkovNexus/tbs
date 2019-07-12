@@ -15,18 +15,19 @@ class ExtractResource(Task):
     def execute(self, user_game_model, person: Person):
         extract_count = person.gatherer_skill.change_value_by_skill(DEFAULT_EXTRACT_VALUE)
         user_game_model.experience_increaser.increase_experience(self.resource.resource_tier, person, person.gatherer_skill)
-        user_game_model.resource_count_changer.extract_resources({self.resource: int(extract_count)})
+        user_game_model.resource_count_changer.extract_resources({self.resource.type: int(extract_count)})
 
     def check_conditions(self, map: Map, user_game_model, person: Person):
         tiles = map.get_tiles_with_economic_influence(user_game_model.user_id)
         for tile in tiles:
             for resource in tile.resources:
-                if type(resource) == type(self.resource):
+                if isinstance(resource, type(self.resource)):
                     return True
+        print(f"tiles with economic influence {tiles}")
         return False
 
     def __repr__(self):
         return f"ExtractResource {self.resource}"
 
     def get_resources_for_consume(self):
-        pass
+        return {}

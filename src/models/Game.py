@@ -22,7 +22,7 @@ class Game:
         self.status = GameStatus.INITIAL
 
     def start_turn_timer(self):
-        self.thread = threading.Timer(10.0, self.process_turn)
+        self.thread = threading.Timer(2.0, self.process_turn)
         self.thread.start()
 
     def process_turn(self):

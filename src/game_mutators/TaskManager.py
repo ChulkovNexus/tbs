@@ -11,7 +11,7 @@ def execute_tasks(game):
                     if last_task.check_conditions(game.map, user_game_model, person):
                         last_task.execute(user_game_model, person)
                     else:
-                        raise ValueError('task check condition failure on execute')
+                        raise ValueError(f'task check condition failure on execute {last_task}')
                 else:
                     person.tasks_schedule[0].turns_count -= 1
             person.recalculate_experience()
@@ -34,7 +34,7 @@ def _update_available_tasks(game_model: UserGameModel, person: Person):
 
     resources_in_stock = game_model.items.get_resources()
     person.available_tasks.extend(game_model.extract_resource_availability_manager.get_tasks())
-    buildings_tasks = game_model.buildings_dependend_tasks_manager.get_tasks(game_model.buildings)
+    buildings_tasks = game_model.buildings_dependend_tasks_manager.get_tasks(game_model.buildings, person)
     person.available_tasks.extend(game_model.resorce_dependend_tasks_manager.get_tasks(buildings_tasks, resources_in_stock))
 
 
@@ -44,5 +44,5 @@ def update_available_tasks_by_resources(game_model: UserGameModel, person: Perso
     resources_in_stock = game_model.items.get_resources()
 
     person.available_tasks.extend(game_model.extract_resource_availability_manager.get_tasks())
-    buildings_tasks = game_model.buildings_dependend_tasks_manager.get_tasks(game_model.buildings)
+    buildings_tasks = game_model.buildings_dependend_tasks_manager.get_tasks(game_model.buildings, person)
     person.available_tasks.extend(game_model.resorce_dependend_tasks_manager.get_tasks(buildings_tasks, resources_in_stock))

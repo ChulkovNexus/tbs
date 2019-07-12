@@ -19,6 +19,7 @@ class Person:
 
     def on_append_to_user(self, user_game_model):
         self.tasks_schedule.resource_count_changer = user_game_model.resource_count_changer
+        self.tasks_schedule.logger = user_game_model.logger
 
     def recalculate_experience(self):
         self.gatherer_skill.recalculate_experience()

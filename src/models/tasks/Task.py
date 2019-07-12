@@ -24,3 +24,9 @@ class Task:
 
     @abstractmethod
     def get_resources_for_consume(self): raise NotImplementedError
+
+    def on_append_to_task_schedule(self):
+        pass
+
+    def on_remove_from_task_schedule(self):
+        pass

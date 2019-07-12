@@ -7,9 +7,9 @@ def update_influences(game):
         user_game_model.religion_influence.influence_income = 0
         user_game_model.economic_influence.influence_income = 0
         for building in user_game_model.buildings:
-            user_game_model.war_influence.influence_income += building.get_war_influence()
-            user_game_model.economic_influence.influence_income += building.get_economic_influence()
-            user_game_model.religion_influence.influence_income += building.religion_influence()
+            user_game_model.war_influence.influence_income += building.war_influence
+            user_game_model.economic_influence.influence_income += building.economic_influence
+            user_game_model.religion_influence.influence_income += building.religion_influence
 
 
 def process_turn(game):

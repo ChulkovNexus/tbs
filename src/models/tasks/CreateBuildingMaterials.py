@@ -12,7 +12,7 @@ class CreateBuildingMaterials(Task):
 
     def execute(self, user_game_model, person):
         user_game_model.experience_increaser.increase_experience(1, person, person.craft_skill)
-        for resource_type, count in self.result.items:
+        for resource_type, count in self.result.items():
             extract_count = person.craft_skill.change_value_by_skill(count)
             user_game_model.resource_count_changer.extract_resources({resource_type: int(extract_count)})
 
@@ -25,7 +25,7 @@ class CreateBuildingMaterials(Task):
 
     def get_resources_for_consume(self):
         result = {}
-        for resource_type, count in self.result.items:
-            for needed_resource, needed_count in resource_type().needed_materials:
+        for resource_type, count in self.result.items():
+            for needed_resource, needed_count in resource_type().needed_materials.items():
                 result[needed_resource] = needed_count * count
         return result

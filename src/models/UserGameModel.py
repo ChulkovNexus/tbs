@@ -27,5 +27,5 @@ class UserGameModel:
         self.religion_influence = Influence()
         self.buildings_dependend_tasks_manager = BuildingsDependedTasksManager()
         self.extract_resource_availability_manager = ExtractResourceTaskAvailabilityManager()
-        self.resorce_dependend_tasks_manager = ResorceDependendTasksManager()
+        self.resorce_dependend_tasks_manager = ResorceDependendTasksManager(self.logger)
 
