@@ -81,7 +81,8 @@ def get_neighbours(pattern, x, y):
 class Map:
 
     def __init__(self):
-        self.map = [[MapTile(x, y) for y in range(5)] for x in range(5)]
+        self.size = 5
+        self.map = [[MapTile(x, y) for y in range(self.size)] for x in range(self.size)]
 
         # we have to clear it every turn
         self.religion_influence_cache = {}

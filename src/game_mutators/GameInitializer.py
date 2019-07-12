@@ -28,11 +28,11 @@ def _create_persons_for_new_game(persons_stack):
 
 def _log_initial_params(game):
     for user_id, user_game_model in game.user_game_models.items():
-        user_game_model.logger.enabled = True
-        user_game_model.logger.log(f"user_id - {user_id} initial resources {user_game_model.extract_resource_availability_manager.available_resources}")
+        user_game_model.logger.tasks_log_enabled = True
+        user_game_model.logger.log_tasks(f"user_id - {user_id} initial resources {user_game_model.extract_resource_availability_manager.available_resources}")
 
         if user_id != 0:
-            user_game_model.logger.enabled = False
+            user_game_model.logger.tasks_log_enabled = False
 
         for i, person in enumerate(user_game_model.persons):
             person.log_skill_levels(user_game_model.logger)

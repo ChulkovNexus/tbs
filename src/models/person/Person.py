@@ -30,10 +30,10 @@ class Person:
         self.craft_skill.recalculate_experience()
 
     def log_skill_levels(self, logger):
-        logger.log(f"person - {self.name}")
-        logger.log(f"   gatherer_skill - {self.gatherer_skill.level}")
-        logger.log(f"   scientist_skill - {self.scientist_skill.level}")
-        logger.log(f"   warrior_skill - {self.warrior_skill.level}")
-        logger.log(f"   priest_skill - {self.priest_skill.level}")
-        logger.log(f"   economist_skill - {self.economist_skill.level}")
-        logger.log(f"   craft_skill - {self.craft_skill.level}")
+        logger.log_tasks(f"person - {self.name}")
+        logger.log_tasks(f"   gatherer_skill - {self.gatherer_skill.level}")
+        logger.log_tasks(f"   scientist_skill - {self.scientist_skill.level}")
+        logger.log_tasks(f"   warrior_skill - {self.warrior_skill.level}")
+        logger.log_tasks(f"   priest_skill - {self.priest_skill.level}")
+        logger.log_tasks(f"   economist_skill - {self.economist_skill.level}")
+        logger.log_tasks(f"   craft_skill - {self.craft_skill.level}")
