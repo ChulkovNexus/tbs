@@ -1,5 +1,6 @@
 from src.ui_test import DropDownWidget
-from src.ui_test.FieldView import FieldView
+from src.ui_test.FieldView import FieldView, tile_size
+from src.ui_test.TasksQueueWidget import TaskQueueWidget
 
 if __name__ == "__main__":
     import tkinter
@@ -14,20 +15,25 @@ if __name__ == "__main__":
 
     top = tkinter.Tk()
     top.title = "tbs"
-    top.geometry("1000x800")
+    top.geometry("1800x800")
+
 
     def on_close():
         top.destroy()
         game.stop()
 
+
     def user_selected(user_id):
         widget.set(user_id)
+        tasks_widget.show(game.user_game_models[user_id])
+
 
     top.protocol("WM_DELETE_WINDOW", on_close)
 
-    c = FieldView(top, len(game.map.size))
+    c = FieldView(top, game.map.size)
     c.draw_map(game.map)
     c.selected_user_callback = user_selected
-    c.place(x=100, y=0, relwidth=1, relheight=1)
     widget = DropDownWidget.addDropDownWidget(top, game, c)
+    tasks_widget = TaskQueueWidget(top)
+    c.pack(anchor=tkinter.NW)
     top.mainloop()

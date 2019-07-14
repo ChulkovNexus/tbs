@@ -11,21 +11,16 @@ click_range = 0.3
 class FieldView(Canvas):
 
     def __init__(self, top, size):
-        super().__init__(top, width=size * tile_size, height=size * tile_size, scrollregion=(0, 0, size * tile_size, size * tile_size))
+        super().__init__(top)
         self.selected_town_id = -1
-        self.hbar = tk.Scrollbar(self, orient="horizontal", command=self.xview)
         self.drag_start_x = 0
         self.drag_start_y = 0
         self.map = None
         self.updatable_map_objects = list()
         self.selected_user_callback = None
         self.start_click_timestamp = 0
-        self.hbar.pack(side="bottom", fill='x')
-        self.vbar = tk.Scrollbar(self, orient="vertical", command=self.yview)
-        self.vbar.pack(side="right", fill='y')
-        self.config(xscrollcommand=self.hbar.set, yscrollcommand=self.vbar.set, yscrollincrement='2', xscrollincrement='2')
-        self.pack(side='left', expand=True, fill='both')
         self.size = size
+        self.configure(background='black', width=size * tile_size, height=size * tile_size)
         self.bind("<Button-1>", self.drag_start)
         self.bind("<ButtonRelease-1>", self.button_released)
 
@@ -84,6 +79,7 @@ class FieldView(Canvas):
         self.selected_town_id = town
         for y, row in enumerate(self.map.map):
             for x, tile in enumerate(row):
+                print(f"{tile.pos_x} {tile.pos_y}")
                 if tile.userIdTown == town:
                     self.draw_unit_selector(x, y)
                     self.draw_map(self.map)

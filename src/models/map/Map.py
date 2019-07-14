@@ -82,7 +82,7 @@ class Map:
 
     def __init__(self):
         self.size = 5
-        self.map = [[MapTile(x, y) for y in range(self.size)] for x in range(self.size)]
+        self.map = [[MapTile(y, x) for y in range(self.size)] for x in range(self.size)]
 
         # we have to clear it every turn
         self.religion_influence_cache = {}
@@ -108,10 +108,12 @@ class Map:
 
     def fill_map(self, users):
         counter = 0
-        for x, row in enumerate(self.map):
-            if x % 2 == 0:
-                for y, tile in enumerate(row):
-                    if x % 2 == 0 and x != 2 and y != 2:
+        for y, row in enumerate(self.map):
+            if y % 2 == 0:
+                for x, tile in enumerate(row):
+                    if x == 2 and y == 2:
+                        continue
+                    if x % 2 == 0:
                         tile.userIdTown = users[counter].id
                         tile.religionUserId = users[counter].id
                         tile.economicDominationUserId = users[counter].id

@@ -1,48 +1,75 @@
 import tkinter
 from tkinter import Frame, Listbox
 
+from src.models.person.Person import Person
+from src.models.tasks import Task
 
-class TaskQueueWidget(Frame):
+one_person_width = 32
+list_width = 400
+list_height = 400
 
-    def __init__(self, user_game_model, top, **kw):
-        super().__init__(top, width=16, height=10, **kw)
+
+class TaskQueueWidget:
+
+    def __init__(self, top):
+        self.user_game_model = None
+        self.top = top
+        self.list_boxes = list()
+        self.established_available_tasks_listeners = list()
+        self.established_task_queue_listeners = list()
+        # self.configure(background='black')
+
+    def show(self, user_game_model):
+        if self.user_game_model:
+            for person in user_game_model.persons:
+                person.available_tasks.remove_listeners(self.established_available_tasks_listeners)
+                person.tasks_schedule.remove_listeners(self.established_task_queue_listeners)
+        self.established_available_tasks_listeners.clear()
+        self.established_task_queue_listeners.clear()
         self.user_game_model = user_game_model
-        self.selected_backpack_item = None
-        self.selected_task = None
-        self.selected_char = None
-        self.backpack_listbox = None
-        self.tasks_listbox = None
-        self.char_list_boxes = list()
-        self.item_slots_frame = Frame(self)
-        self.char_chooser = None
-        self.char_chooser_tkvar = None
-        self.move_items_beetwen_backpacks_btn = None
+        for view in self.list_boxes:
+            view.pack_forget()
+        for person in user_game_model.persons:
+            self.init_view(person)
+        # self.configure(background='black', width=list_width * 2 * len(user_game_model.persons), height=list_height)
 
-    def init_view(self):
-        self.item_slots_frame.pack()
-        self.backpack_listbox = Listbox(self, width=16, height=16)
-        self.backpack_listbox.pack()
-        self.backpack_listbox.bind('<<ListboxSelect>>', self.on_select)
-        buttons_frame = Frame(self)
-        buttons_frame.pack()
-        self.create_tasks_list()
+    def init_view(self, person):
+        available_tasks_listbox = Listbox(self.top)
+        available_tasks_listbox.bind('<<ListboxSelect>>', lambda event: self.on_select(event, person))
+        scroll = tkinter.Scrollbar(command=available_tasks_listbox.yview)
+        available_tasks_listbox.config(yscrollcommand=scroll.set)
+        available_tasks_listbox.pack(side="left")
+        scroll.pack(side="left", fill=tkinter.Y)
+        self.fill_listbox(person.available_tasks, available_tasks_listbox)
+        person.available_tasks.listeners.append(lambda: self.fill_listbox(person.available_tasks, available_tasks_listbox))
+        self.create_tasks_list(person)
+        self.list_boxes.append(available_tasks_listbox)
+        self.list_boxes.append(scroll)
 
-    def create_tasks_list(self):
-        label = tkinter.Label(self, text="Unit Tasks")
-        label.pack()
-        self.tasks_listbox = Listbox(self, width=16, height=16)
-        self.tasks_listbox.pack()
-        self.tasks_listbox.bind('<<ListboxSelect>>', self.on_task_select)
-        buttons_frame = Frame(self)
-        buttons_frame.pack()
+    def fill_listbox(self, tasks: Task, listbox):
+        listbox.delete(0, tkinter.END)
+        for task in tasks:
+            listbox.insert(0, f"{task} {task.get_resources_for_consume()}")
 
-    def on_select(self, args):
+    def create_tasks_list(self, person: Person):
+        tasks_listbox = Listbox(self.top)
+        scroll = tkinter.Scrollbar(command=tasks_listbox.yview)
+        tasks_listbox.bind('<<ListboxSelect>>', lambda event: self.on_task_select(event, person))
+        tasks_listbox.config(yscrollcommand=scroll.set)
+        self.fill_listbox(person.tasks_schedule, tasks_listbox)
+        person.tasks_schedule.listeners.append(lambda: self.fill_listbox(person.tasks_schedule, tasks_listbox))
+        tasks_listbox.pack(side="left")
+        scroll.pack(side="left", fill=tkinter.Y)
+        self.list_boxes.append(tasks_listbox)
+        self.list_boxes.append(scroll)
+
+    def on_select(self, event, person):
         if self.backpack_listbox.curselection():
             selection_index = self.backpack_listbox.curselection()[0]
             items = self.unit.backpack.items
             self.selected_backpack_item = items[len(items) - selection_index - 1]
 
-    def on_task_select(self, args):
+    def on_task_select(self, event, person):
         if self.backpack_listbox.curselection():
             selection_index = self.backpack_listbox.curselection()[0]
             items = self.unit.backpack.items

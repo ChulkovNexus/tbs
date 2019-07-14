@@ -36,6 +36,7 @@ def _update_available_tasks(game_model: UserGameModel, person: Person):
     person.available_tasks.extend(game_model.extract_resource_availability_manager.get_tasks())
     buildings_tasks = game_model.buildings_dependend_tasks_manager.get_tasks(game_model.buildings, person)
     person.available_tasks.extend(game_model.resorce_dependend_tasks_manager.get_tasks(buildings_tasks, resources_in_stock))
+    person.available_tasks.update_listeners()
 
 
 def update_available_tasks_by_resources(game_model: UserGameModel, person: Person):
@@ -46,3 +47,4 @@ def update_available_tasks_by_resources(game_model: UserGameModel, person: Perso
     person.available_tasks.extend(game_model.extract_resource_availability_manager.get_tasks())
     buildings_tasks = game_model.buildings_dependend_tasks_manager.get_tasks(game_model.buildings, person)
     person.available_tasks.extend(game_model.resorce_dependend_tasks_manager.get_tasks(buildings_tasks, resources_in_stock))
+    person.available_tasks.update_listeners()

@@ -1,3 +1,4 @@
+from src.models.person.AvailableTasksStack import AvailableTasksStack
 from src.models.person.medicine.character_health import CharacterHealth
 from src.models.tasks.TasksSchedule import TaskSchedule
 
@@ -6,7 +7,7 @@ class Person:
 
     def __init__(self, name):
         self.tasks_schedule = TaskSchedule(self)
-        self.available_tasks = list()
+        self.available_tasks = AvailableTasksStack(self)
         self.name = name
         self.gatherer_skill = None
         self.scientist_skill = None
