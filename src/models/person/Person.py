@@ -32,9 +32,9 @@ class Person:
 
     def log_skill_levels(self, logger):
         logger.log_tasks(f"person - {self.name}")
-        logger.log_tasks(f"   gatherer_skill - {self.gatherer_skill.level}")
-        logger.log_tasks(f"   scientist_skill - {self.scientist_skill.level}")
-        logger.log_tasks(f"   warrior_skill - {self.warrior_skill.level}")
-        logger.log_tasks(f"   priest_skill - {self.priest_skill.level}")
-        logger.log_tasks(f"   economist_skill - {self.economist_skill.level}")
-        logger.log_tasks(f"   craft_skill - {self.craft_skill.level}")
+        logger.log_tasks(f"   gatherer_skill - {self.gatherer_skill.level} expirience- {self.gatherer_skill.experience}")
+        logger.log_tasks(f"   scientist_skill - {self.scientist_skill.level} expirience- {self.scientist_skill.experience}")
+        logger.log_tasks(f"   warrior_skill - {self.warrior_skill.level} expirience- {self.warrior_skill.experience}")
+        logger.log_tasks(f"   priest_skill - {self.priest_skill.level} expirience- {self.priest_skill.experience}")
+        logger.log_tasks(f"   economist_skill - {self.economist_skill.level} expirience- {self.economist_skill.experience}")
+        logger.log_tasks(f"   craft_skill - {self.craft_skill.level} expirience- {self.craft_skill.experience}")

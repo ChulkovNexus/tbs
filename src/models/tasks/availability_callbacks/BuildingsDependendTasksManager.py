@@ -18,6 +18,10 @@ class NotAllowedBuildingsStack(list):
         self.buildings_task_manager.update_allowed_tasks_cashe()
 
 
+def check_necessary_buildings_condition(new_building, already_created_buildings):
+    return all(x in already_created_buildings for x in new_building.necessary_buildings)
+
+
 class BuildingsDependedTasksManager:
 
     def __init__(self):
@@ -42,7 +46,7 @@ class BuildingsDependedTasksManager:
                 new_buildings = [x for x in building.allow_to_create_buildings if x not in self.not_allowed_buildings]
                 new_buildings_tasks = []
                 for new_building in new_buildings:
-                    if new_building not in already_created_buildings:
+                    if new_building not in already_created_buildings and check_necessary_buildings_condition(new_building, already_created_buildings):
                         for resource in new_building.building_resources_needed:
                             new_buildings_tasks.append(CreateBuilding(new_building, resource, self.not_allowed_buildings))
                 self._task_list.extend(new_buildings_tasks)

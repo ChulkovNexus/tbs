@@ -20,7 +20,7 @@ class SkillPointsHolder:
 
 
 def _create_persons_for_new_game(persons_stack):
-    for i in range(0, 3):
+    for i in range(0, 1):
         new_person = Person(i)
         _fill_skills(new_person)
         persons_stack.append(new_person)
@@ -28,14 +28,7 @@ def _create_persons_for_new_game(persons_stack):
 
 def _log_initial_params(game):
     for user_id, user_game_model in game.user_game_models.items():
-        user_game_model.logger.tasks_log_enabled = True
         user_game_model.logger.log_tasks(f"user_id - {user_id} initial resources {user_game_model.extract_resource_availability_manager.available_resources}")
-
-        if user_id != 0:
-            user_game_model.logger.tasks_log_enabled = False
-
-        for i, person in enumerate(user_game_model.persons):
-            person.log_skill_levels(user_game_model.logger)
 
 
 def itit_game(server: GameServer, users):

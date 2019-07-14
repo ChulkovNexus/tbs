@@ -37,53 +37,62 @@ def process_turn(game):
                 if neghbour.warInfluence == MAX_INFLUENCE:
                     religion_influences[neghbour.warUserId] += game.user_game_models[neghbour.warUserId].religion_influence.influence_income
 
-            max_influence_income = -1
-            second_after_max = -1
+            max_influence_income = 0
+            second_after_max = 0
             user_id = -1
-            for user_id, income_value in econom_influences.items():
+            for u_id, income_value in econom_influences.items():
                 if income_value > max_influence_income:
-                    user_id = user_id
+                    user_id = u_id
                     second_after_max = max_influence_income
                     max_influence_income = income_value
+
+            # if max_influence_income > second_after_max:
             if tile.economicDominationUserId == user_id:
                 tile.economicInfluence += max_influence_income - second_after_max
             else:
                 tile.economicInfluence -= max_influence_income - second_after_max
             if tile.economicInfluence < 0:
                 tile.economicDominationUserId = user_id
+                tile.economicInfluence = -tile.economicInfluence
             if tile.economicInfluence > MAX_INFLUENCE:
                 tile.economicInfluence = MAX_INFLUENCE
 
-            max_influence_income = -1
-            second_after_max = -1
+            max_influence_income = 0
+            second_after_max = 0
             user_id = -1
-            for user_id, income_value in war_influences.items():
+            for u_id, income_value in war_influences.items():
                 if income_value > max_influence_income:
-                    user_id = user_id
+                    user_id = u_id
                     second_after_max = max_influence_income
                     max_influence_income = income_value
+
+            # if max_influence_income > second_after_max:
             if tile.warUserId == user_id:
                 tile.warInfluence += max_influence_income - second_after_max
             else:
                 tile.warInfluence -= max_influence_income - second_after_max
             if tile.warInfluence < 0:
                 tile.warUserId = user_id
+                tile.warInfluence = -tile.warInfluence
             if tile.warInfluence > MAX_INFLUENCE:
                 tile.warInfluence = MAX_INFLUENCE
 
-            max_influence_income = -1
-            second_after_max = -1
+            max_influence_income = 0
+            second_after_max = 0
             user_id = -1
-            for user_id, income_value in religion_influences.items():
+            for u_id, income_value in religion_influences.items():
                 if income_value > max_influence_income:
-                    user_id = user_id
+                    user_id = u_id
                     second_after_max = max_influence_income
                     max_influence_income = income_value
+
+            # if max_influence_income > second_after_max:
             if tile.religionUserId == user_id:
                 tile.religionInfluence += max_influence_income - second_after_max
             else:
                 tile.religionInfluence -= max_influence_income - second_after_max
             if tile.religionInfluence < 0:
                 tile.religionUserId = user_id
+                tile.religionInfluence = -tile.religionInfluence
             if tile.religionInfluence > MAX_INFLUENCE:
                 tile.religionInfluence = MAX_INFLUENCE

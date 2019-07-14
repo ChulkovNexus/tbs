@@ -15,6 +15,7 @@ class Building(Item):
         self.building_turns_count = 1
         self.allow_to_create_materials = {}
         self.allow_to_create_buildings = []
+        self.necessary_buildings = []
         self.building_resources_needed = [{}]
 
     @abstractmethod
@@ -57,6 +58,7 @@ class Sawmill(Building):
     def __init__(self):
         super().__init__()
         self.building_turns_count = 10
+        self.economic_influence = 10
         self.building_resources_needed = [{Wood: 100}, {Metal: 100}, {Stone: 100}]
         self.allow_to_create_materials = {Plank: 1}
         self.allow_to_create_buildings = [Archery()]

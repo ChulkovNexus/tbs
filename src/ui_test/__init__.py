@@ -16,7 +16,7 @@ if __name__ == "__main__":
     top = tkinter.Tk()
     top.title = "tbs"
     top.geometry("1800x800")
-
+    last_selected_user = None
 
     def on_close():
         top.destroy()
@@ -26,6 +26,12 @@ if __name__ == "__main__":
     def user_selected(user_id):
         widget.set(user_id)
         tasks_widget.show(game.user_game_models[user_id])
+        # for user_id, user in game.user_game_models.items():
+        #     user.logger.tasks_log_enabled = False
+
+        # game.user_game_models[user_id].logger.tasks_log_enabled = True
+        for i, person in enumerate(game.user_game_models[user_id].persons):
+            person.log_skill_levels(game.user_game_models[user_id].logger)
 
 
     top.protocol("WM_DELETE_WINDOW", on_close)

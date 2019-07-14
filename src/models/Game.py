@@ -31,7 +31,9 @@ class Game:
         TaskManager.execute_tasks(self)
         MedicineProcessor.process_turn(self.user_game_models)
         SpredInfluenceManager.process_turn(self)
+        TaskManager.update_available_tasks_after_process_turn(self)
         Bot.choose_tasks(self)
+        print("*" * 20)
 
     def stop(self):
         self.status = GameStatus.FINISHED

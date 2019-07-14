@@ -9,19 +9,18 @@ class TaskSchedule(list):
 
     def append(self, other, n=1):
         list.append(self, other)
-        other.on_append_to_task_schedule()
         self.update_listeners()
+        other.on_append_to_task_schedule()
         resources = other.get_resources_for_consume()
         self.resource_count_changer.consume_resources(resources, self.person)
 
-    def remove(self, **kwargs):
+    def remove(self, item):
         print(f"removed from tasks schedule")
-        item = list.__getitem__(self, **kwargs)
         resources = item.get_resources_for_consume()
         item.on_remove_from_task_schedule()
-        self.update_listeners()
         self.resource_count_changer.return_resources(resources, self.person)
-        list.__delitem__(self, **kwargs)
+        list.remove(self, item)
+        self.update_listeners()
 
     def update_listeners(self):
         for listener in self.listeners:

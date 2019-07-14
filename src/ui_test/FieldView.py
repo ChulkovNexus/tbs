@@ -66,20 +66,19 @@ class FieldView(Canvas):
         self.tag_lower(rectangle)
 
         if tile.warUserId == self.selected_town_id:
-            war_influence = self.create_text((x * tile_size) + (tile_size / 2), (y * tile_size) + (tile_size / 2), fill="red", font="Times 6", text=str(tile.warInfluence))
+            war_influence = self.create_text((x * tile_size) + (tile_size / 2), (y * tile_size) + (tile_size / 2) - 11, fill="red", font="Times 9", text=str(tile.warInfluence))
             self.updatable_map_objects.append(war_influence)
         if tile.religionUserId == self.selected_town_id:
-            religion_influence = self.create_text((x * tile_size) + (tile_size / 2), (y * tile_size) + (tile_size / 2), fill="blue", font="Times 6", text=str(tile.religionInfluence))
+            religion_influence = self.create_text((x * tile_size) + (tile_size / 2), (y * tile_size) + (tile_size / 2), fill="blue", font="Times 9", text=str(tile.religionInfluence))
             self.updatable_map_objects.append(religion_influence)
         if tile.economicDominationUserId == self.selected_town_id:
-            economic_influence = self.create_text((x * tile_size) + (tile_size / 2), (y * tile_size) + (tile_size / 2), fill="yellow", font="Times 6", text=str(tile.economicInfluence))
+            economic_influence = self.create_text((x * tile_size) + (tile_size / 2), (y * tile_size) + (tile_size / 2) + 11, fill="green", font="Times 9", text=str(tile.economicInfluence))
             self.updatable_map_objects.append(economic_influence)
 
     def user_selected(self, town):
         self.selected_town_id = town
         for y, row in enumerate(self.map.map):
             for x, tile in enumerate(row):
-                print(f"{tile.pos_x} {tile.pos_y}")
                 if tile.userIdTown == town:
                     self.draw_unit_selector(x, y)
                     self.draw_map(self.map)

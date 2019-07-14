@@ -15,7 +15,6 @@ def execute_tasks(game):
                 else:
                     person.tasks_schedule[0].turns_count -= 1
             person.recalculate_experience()
-    update_available_tasks_after_process_turn(game)
 
 
 def update_available_tasks_after_process_turn(game):

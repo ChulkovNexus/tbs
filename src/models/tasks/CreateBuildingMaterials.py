@@ -18,10 +18,7 @@ class CreateBuildingMaterials(Task):
 
     def check_conditions(self, map: Map, user_game_model, person: Person):
         has_buildings = all(x in user_game_model.buildings for x in self.necessary_buildings)
-        resources = user_game_model.items.get_resources()
-        necessary_resources = self.get_resources_for_consume()
-        has_resources = all([key in resources and resources[key] > necessary_resources[key] for key in necessary_resources.keys()])
-        return has_buildings and has_resources
+        return has_buildings
 
     def get_resources_for_consume(self):
         result = {}
@@ -29,3 +26,6 @@ class CreateBuildingMaterials(Task):
             for needed_resource, needed_count in resource_type().needed_materials.items():
                 result[needed_resource] = needed_count * count
         return result
+
+    def __repr__(self):
+        return f"CreateMaterials {self.result}"
