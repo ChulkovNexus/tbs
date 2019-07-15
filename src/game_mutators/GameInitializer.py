@@ -6,7 +6,7 @@ from src.models.Game import Game
 from src.models.person.Person import Person
 from src.models.UserGameModel import UserGameModel
 from src.models.UserModel import UserModel
-from src.models.person.Skill import Skill
+from src.models.person.Skill import Skill, SkillType
 
 
 class SkillPointsHolder:
@@ -61,24 +61,21 @@ def _create_test_user(id):
 
 def _fill_skills(person):
     skill_points = SkillPointsHolder()
-    person.gatherer_skill = Skill(skill_points.get_rand_int())
-    person.scientist_skill = Skill(skill_points.get_rand_int())
-    person.warrior_skill = Skill(skill_points.get_rand_int())
-    person.priest_skill = Skill(skill_points.get_rand_int())
-    person.economist_skill = Skill(skill_points.get_rand_int())
-    person.craft_skill = Skill(skill_points.get_rand_int())
+    person.gatherer_skill = Skill(skill_points.get_rand_int(), SkillType.Gather)
+    person.scientist_skill = Skill(skill_points.get_rand_int(), SkillType.Science)
+    person.warrior_skill = Skill(skill_points.get_rand_int(), SkillType.War)
+    person.priest_skill = Skill(skill_points.get_rand_int(), SkillType.Religion)
+    person.craft_skill = Skill(skill_points.get_rand_int(), SkillType.Craft)
     if skill_points.poins > 0:
         person.gatherer_skill.level += 1
         person.scientist_skill.level += 1
         person.warrior_skill.level += 1
         person.priest_skill.level += 1
-        person.economist_skill.level += 1
         person.craft_skill.level += 1
     person.gatherer_skill.set_experience_from_level()
     person.scientist_skill.set_experience_from_level()
     person.warrior_skill.set_experience_from_level()
     person.priest_skill.set_experience_from_level()
-    person.economist_skill.set_experience_from_level()
     person.craft_skill.set_experience_from_level()
 
 

@@ -16,12 +16,14 @@ class UserGameModel:
         self.game_id = 0
         self.pos_x = 0
         self.pos_y = 0
+        self.science_points = 0
         self.logger = UserModelLogger()
         self.resource_count_changer = ResourceCountChanger(self)
         self.experience_increaser = ExperienceIncreaser(self)
         self.persons = PersonsStack(self)
         self.items = ItemsStack()
         self.buildings = list()
+        self.city_buffs = list()
         self.war_influence = Influence()
         self.economic_influence = Influence()
         self.religion_influence = Influence()

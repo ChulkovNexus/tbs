@@ -13,7 +13,6 @@ class Person:
         self.scientist_skill = None
         self.warrior_skill = None
         self.priest_skill = None
-        self.economist_skill = None
         self.craft_skill = None
         self.buffs = list()
         self.health = CharacterHealth(self)
@@ -27,7 +26,6 @@ class Person:
         self.scientist_skill.recalculate_experience()
         self.warrior_skill.recalculate_experience()
         self.priest_skill.recalculate_experience()
-        self.economist_skill.recalculate_experience()
         self.craft_skill.recalculate_experience()
 
     def log_skill_levels(self, logger):
@@ -36,5 +34,4 @@ class Person:
         logger.log_tasks(f"   scientist_skill - {self.scientist_skill.level} expirience- {self.scientist_skill.experience}")
         logger.log_tasks(f"   warrior_skill - {self.warrior_skill.level} expirience- {self.warrior_skill.experience}")
         logger.log_tasks(f"   priest_skill - {self.priest_skill.level} expirience- {self.priest_skill.experience}")
-        logger.log_tasks(f"   economist_skill - {self.economist_skill.level} expirience- {self.economist_skill.experience}")
         logger.log_tasks(f"   craft_skill - {self.craft_skill.level} expirience- {self.craft_skill.experience}")

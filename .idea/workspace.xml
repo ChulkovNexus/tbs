@@ -2,24 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a294a28-87d1-4476-bcef-08f41e583840" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/models/tasks/PrayerSongs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/tasks/ScienceResearch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game_mutators/TaskManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_mutators/TaskManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game_mutators/bot/Bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_mutators/bot/Bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/UserGameModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserGameModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/items/BuildingMaterials.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/BuildingMaterials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/items/buildings/Building.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/buildings/Building.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/items/buildings/BuildingPerfabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/items/buildings/BuildingPerfabs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/map/Resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/map/Resources.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/person/Person.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Person.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tasks/CreateBuildingMaterials.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/CreateBuildingMaterials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/tasks/TasksSchedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/TasksSchedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/person/Skill.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/Skill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/person/buffs/Buff.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person/buffs/Buff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/tasks/CreateBuildingTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/CreateBuildingTask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/tasks/Task.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/Task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_test/FieldView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_test/FieldView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_test/TasksQueueWidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_test/TasksQueueWidget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_test/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/UserModelLogger.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/UserModelLogger.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,25 +36,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="242" />
+          <entry key="py" value="265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="242" />
+          <entry key="Python" value="265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="339" />
           <entry key="dummy" value="101" />
-          <entry key="py" value="13062" />
+          <entry key="py" value="14802" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="101" />
-          <entry key="Python" value="13401" />
+          <entry key="Python" value="15141" />
         </counts>
       </usages-collector>
     </session>
@@ -91,11 +91,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Building.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/models/items/buildings/Building.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="168">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <folding>
+                <element signature="e#1#78#0" expanded="true" />
+                <marker date="1563211459636" expanded="true" signature="3310:3319" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/map/Resources.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/tasks/PrayerSongs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+                <marker date="1563200731518" expanded="true" signature="694:720" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/tasks/ExtractResource.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/tasks/ScienceResearch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+                <marker date="1563201122842" expanded="true" signature="470:635" ph="..." />
+                <marker date="1563201122842" expanded="true" signature="842:892" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/person/Person.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game_mutators/GameInitializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="64" column="76" lean-forward="true" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/person/Skill.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <marker date="1563201380038" expanded="true" signature="62:139" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/tasks/Task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="47" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -103,22 +200,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskManager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game_mutators/TaskManager.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/person/buffs/Buff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingsDependendTasksManager.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="136">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding>
-                <element signature="e#0#80#0" expanded="true" />
+                <marker date="1563199477073" expanded="true" signature="95:212" ph="..." />
               </folding>
             </state>
           </provider>
@@ -135,13 +223,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>disabled_by_injuries_buff</find>
-      <find>war_in</find>
-      <find>war_influence_income</find>
-      <find>religion_influence_income</find>
-      <find>economic_influence</find>
-      <find>task_not_needed_buildings</find>
-      <find>task before res filter</find>
       <find>items stack -</find>
       <find>_add</find>
       <find>12345</find>
@@ -165,6 +246,13 @@
       <find>available tasks</find>
       <find>task_sched</find>
       <find>all(</find>
+      <find>Wool</find>
+      <find>Pigs</find>
+      <find>get_a</find>
+      <find>appl</find>
+      <find>economist_skill</find>
+      <find>warrior_skill</find>
+      <find>ResearchWorkshop</find>
     </findStrings>
     <replaceStrings>
       <replace>w_influence</replace>
@@ -183,8 +271,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/models/tasks/availability_callbacks/ResourceDependedTaskMAnager.py" />
-        <option value="$PROJECT_DIR$/src/models/tasks/availability_callbacks/ResourceDependedTaskManager.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/availability_callbacks/ExtractResourceTaskAvailabilityManager.py" />
         <option value="$PROJECT_DIR$/src/models/map/Direction.py" />
         <option value="$PROJECT_DIR$/src/models/items/wearables/WearableItem.py" />
@@ -192,9 +278,7 @@
         <option value="$PROJECT_DIR$/src/__init__.py" />
         <option value="$PROJECT_DIR$/src/models/Person.py" />
         <option value="$PROJECT_DIR$/src/models/PersonsStack.py" />
-        <option value="$PROJECT_DIR$/src/models/person/Skill.py" />
         <option value="$PROJECT_DIR$/src/models/person/Buff.py" />
-        <option value="$PROJECT_DIR$/src/models/person/buffs/Buff.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/ExperienceIncreaser.py" />
         <option value="$PROJECT_DIR$/src/models/person/medicine/character_health.py" />
         <option value="$PROJECT_DIR$/src/models/person/buffs/DisabledByInjuryBuff.py" />
@@ -202,46 +286,50 @@
         <option value="$PROJECT_DIR$/src/models/person/medicine/MedicineProcessor.py" />
         <option value="$PROJECT_DIR$/src/models/Influence.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/CreatePlanks.py" />
-        <option value="$PROJECT_DIR$/src/models/items/BuildingMaterials.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/buildings/CreateSawmillTask.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/buildings/CreateBuildingTask.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/MedicineProcessor.py" />
-        <option value="$PROJECT_DIR$/src/models/map/Resources.py" />
-        <option value="$PROJECT_DIR$/src/models/UserGameModel.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/availability_callbacks/ResorceDependendTasksManager.py" />
-        <option value="$PROJECT_DIR$/src/models/tasks/Task.py" />
-        <option value="$PROJECT_DIR$/src/models/items/buildings/BuildingPerfabs.py" />
         <option value="$PROJECT_DIR$/src/models/person/PersonsStack.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/ResourceCountChanger.py" />
         <option value="$PROJECT_DIR$/src/models/items/ItemsStack.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/ExtractResource.py" />
-        <option value="$PROJECT_DIR$/src/models/tasks/CreateBuildingTask.py" />
         <option value="$PROJECT_DIR$/src/ui_test/DropDownWidget.py" />
         <option value="$PROJECT_DIR$/src/models/person/AvailableTasksStack.py" />
         <option value="$PROJECT_DIR$/src/models/map/Map.py" />
         <option value="$PROJECT_DIR$/src/models/map/MapTile.py" />
-        <option value="$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/TaskManager.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/CreateBuildingMaterials.py" />
-        <option value="$PROJECT_DIR$/src/models/person/Person.py" />
         <option value="$PROJECT_DIR$/src/ui_test/FieldView.py" />
         <option value="$PROJECT_DIR$/src/utils/UserModelLogger.py" />
         <option value="$PROJECT_DIR$/src/game_mutators/bot/Bot.py" />
         <option value="$PROJECT_DIR$/src/ui_test/__init__.py" />
         <option value="$PROJECT_DIR$/src/models/Game.py" />
-        <option value="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/TasksSchedule.py" />
         <option value="$PROJECT_DIR$/src/ui_test/TasksQueueWidget.py" />
-        <option value="$PROJECT_DIR$/src/models/items/buildings/Building.py" />
+        <option value="$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py" />
+        <option value="$PROJECT_DIR$/src/models/items/buildings/BuildingPerfabs.py" />
+        <option value="$PROJECT_DIR$/src/models/items/BuildingMaterials.py" />
+        <option value="$PROJECT_DIR$/src/models/map/Resources.py" />
         <option value="$PROJECT_DIR$/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py" />
+        <option value="$PROJECT_DIR$/src/models/person/buffs/Buff.py" />
+        <option value="$PROJECT_DIR$/src/models/UserGameModel.py" />
+        <option value="$PROJECT_DIR$/src/models/tasks/CreateBuildingTask.py" />
+        <option value="$PROJECT_DIR$/src/models/tasks/PrayerSongs.py" />
+        <option value="$PROJECT_DIR$/src/models/tasks/Task.py" />
+        <option value="$PROJECT_DIR$/src/models/tasks/ScienceResearch.py" />
+        <option value="$PROJECT_DIR$/src/models/person/Person.py" />
+        <option value="$PROJECT_DIR$/src/game_mutators/GameInitializer.py" />
+        <option value="$PROJECT_DIR$/src/models/person/Skill.py" />
+        <option value="$PROJECT_DIR$/src/models/items/buildings/Building.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="3" />
+    <option name="y" value="2" />
+    <option name="width" value="1022" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -250,7 +338,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,14 +360,44 @@
               <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tbs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game_mutators" type="462c0819:PsiDirectoryNode" />
-              <item name="bot" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="tbs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+              <item name="buildings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="person" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tbs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="person" type="462c0819:PsiDirectoryNode" />
+              <item name="buffs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
@@ -289,26 +406,15 @@
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tbs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="buildings&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py&#10;Build&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/tasks/CreateBuildingMaterials.py&#10;Bu&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/items/buildings/Building.py&#10;Extra&#9;null&#9;null&#10;TaskSc&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/tasks/TasksSchedule.py&#10;Game&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/Game.py&#10;Logger&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/utils/UserModelLogger.py&#10;Saw&#9;null&#9;null&#10;MapTile&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/map/MapTile.py&#10;game&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/Game.py&#10;Fiel&#9;FILE&#9;file://D:/workspace/python/tbs/src/ui_test/FieldView.py&#10;Person&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/person/Person.py&#10;Гыук&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/UserGameModel.py&#10;Map&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Map.py&#10;extrac&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/ExtractResource.py&#10;Task&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/Task.py&#10;Ex&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/ExtractResource.py&#10;Resource&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;Extrac&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/ExtractResource.py&#10;Tas&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/Task.py&#10;Taskqu&#9;null&#9;null&#10;TaskMa&#9;FILE&#9;file://D:/workspace/python/tbs/src/game_mutators/TaskManager.py&#10;Reso&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/map/Resources.py&#10;Res&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;ItemsS&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/items/ItemsStack.py&#10;Item&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/items/ItemsStack.py&#10;Куыщгксу&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;:&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Reso&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;Pers&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/person/Person.py&#10;Buff&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/person/buffs/Buff.py&#10;Use&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/UserGameModel.py&#10;Buildin&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/items/buildings/Building.py&#10;Spred&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/game_mutators/SpredInfluenceManager.py&#10;buildings&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py&#10;Build&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/tasks/CreateBuildingMaterials.py&#10;Bu&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/items/buildings/Building.py&#10;Extra&#9;null&#9;null&#10;TaskSc&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/tasks/TasksSchedule.py&#10;Game&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/Game.py&#10;Logger&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/utils/UserModelLogger.py&#10;Saw&#9;null&#9;null&#10;MapTile&#9;FILE&#9;file://D:/pyWorkspace/tbs/src/models/map/MapTile.py&#10;game&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/Game.py&#10;Fiel&#9;FILE&#9;file://D:/workspace/python/tbs/src/ui_test/FieldView.py&#10;Person&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/person/Person.py&#10;Гыук&#9;FILE&#9;file://D:/workspace/python/tbs/src/models/UserGameModel.py&#10;Map&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Map.py&#10;extrac&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/ExtractResource.py&#10;Task&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/Task.py&#10;Ex&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/ExtractResource.py&#10;Resource&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;Extrac&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/ExtractResource.py&#10;Tas&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/tasks/Task.py&#10;Taskqu&#9;null&#9;null&#10;TaskMa&#9;FILE&#9;file://D:/workspace/python/tbs/src/game_mutators/TaskManager.py&#10;Res&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;ItemsS&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/items/ItemsStack.py&#10;Item&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/items/ItemsStack.py&#10;Куыщгксу&#9;FILE&#9;file://Z:/PyWorkspace/tbs/src/models/map/Resources.py&#10;:&#9;null&#9;null" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -355,6 +461,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tbs" />
@@ -373,6 +482,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.__init__" />
@@ -408,42 +520,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23445733" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299532" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299532" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32831" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10165485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299532" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32761312" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32831" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33046287" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299532" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3299532" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3299532" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/ui_test/TasksQueueWidget.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="13" />
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="tkvar.get()" />
@@ -453,33 +555,11 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/bot/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/ExperienceIncreaser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/person/medicine/__init__.py" />
     <entry file="file://$PROJECT_DIR$/src/models/person/medicine/body_parts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/person/buffs/DisabledByInjuryBuff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/person/buffs/Buff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -523,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/items/BuildingMaterials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/tasks/buildings/__init__.py" />
     <entry file="file://$PROJECT_DIR$/src/models/tasks/__init__.py" />
     <entry file="file://$PROJECT_DIR$/src/game_mutators/MedicineProcessor.py">
@@ -549,27 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/items/buildings/BuildingPerfabs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/person/PersonsStack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/map/Resources.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="131" column="23" lean-forward="true" selection-start-line="131" selection-start-column="23" selection-end-line="131" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,30 +640,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/tasks/Task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/UserGameModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,55 +671,31 @@
     <entry file="file://$PROJECT_DIR$/src/models/map/MapTile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/map/Map.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+        <state relative-caret-position="68">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/tasks/CreateBuildingTask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="55" lean-forward="true" selection-start-line="29" selection-end-line="31" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/person/Skill.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui_test/DropDownWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="272">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/UserModelLogger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -699,23 +708,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui_test/FieldView.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
+        <state relative-caret-position="629">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <marker date="1563181280800" expanded="true" signature="164:165" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/tasks/ExtractResource.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/items/ItemsStack.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,40 +732,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/person/Person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
+            <marker date="1563181280729" expanded="true" signature="222:278" ph="..." />
+            <marker date="1563181280729" expanded="true" signature="289:290" ph="..." />
+            <marker date="1563181280729" expanded="true" signature="289:295" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui_test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="28" column="61" lean-forward="true" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+        <state relative-caret-position="255">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game_mutators/GameInitializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui_test/TasksQueueWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="731">
+          <caret line="43" column="55" lean-forward="true" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -801,22 +787,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/items/buildings/Building.py">
+    <entry file="file://$PROJECT_DIR$/src/game_mutators/SpredInfluenceManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="561">
+          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/buildings/BuildingPerfabs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/BuildingMaterials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/tasks/availability_callbacks/BuildingsDependendTasksManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/person/buffs/DisabledByInjuryBuff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/UserGameModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/tasks/CreateBuildingTask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/tasks/ExtractResource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/person/buffs/Buff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <marker date="1563199477073" expanded="true" signature="95:212" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/tasks/Task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/tasks/ScienceResearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1563201122842" expanded="true" signature="470:635" ph="..." />
+            <marker date="1563201122842" expanded="true" signature="842:892" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/person/Person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game_mutators/GameInitializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="64" column="76" lean-forward="true" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/person/Skill.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1563201380038" expanded="true" signature="62:139" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/map/Resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/tasks/PrayerSongs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <marker date="1563200731518" expanded="true" signature="694:720" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/items/buildings/Building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding>
+            <element signature="e#1#78#0" expanded="true" />
+            <marker date="1563211459636" expanded="true" signature="3310:3319" ph="..." />
           </folding>
         </state>
       </provider>

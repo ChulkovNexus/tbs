@@ -10,6 +10,8 @@ class Task:
         self.descr = ""
         self.game_model = None
         self.turns_count = 1
+        #todo менять turns count от персоонажа который исполняет таск
+        self.skill_for_calculating_turns = None
         self.needed_items = list()
         self.buildings = list()
         self.result_items = list()

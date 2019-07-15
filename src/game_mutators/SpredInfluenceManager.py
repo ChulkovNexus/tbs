@@ -46,7 +46,6 @@ def process_turn(game):
                     second_after_max = max_influence_income
                     max_influence_income = income_value
 
-            # if max_influence_income > second_after_max:
             if tile.economicDominationUserId == user_id:
                 tile.economicInfluence += max_influence_income - second_after_max
             else:
@@ -66,7 +65,6 @@ def process_turn(game):
                     second_after_max = max_influence_income
                     max_influence_income = income_value
 
-            # if max_influence_income > second_after_max:
             if tile.warUserId == user_id:
                 tile.warInfluence += max_influence_income - second_after_max
             else:
@@ -86,7 +84,6 @@ def process_turn(game):
                     second_after_max = max_influence_income
                     max_influence_income = income_value
 
-            # if max_influence_income > second_after_max:
             if tile.religionUserId == user_id:
                 tile.religionInfluence += max_influence_income - second_after_max
             else:

@@ -1,11 +1,22 @@
+from enum import Enum
+
 MAX_LEVEL = 10
+
+
+class SkillType(Enum):
+    Science = 0
+    Religion = 0
+    War = 0
+    Gather = 0
+    Craft = 0
 
 
 class Skill:
 
-    def __init__(self, level, difficulty=1):
+    def __init__(self, level, skill_type, difficulty=1):
         self.difficulty = difficulty
         self.level = level
+        self.skill_type = skill_type
         self.description = ""
         self.mutator = level
         self.experience = 0

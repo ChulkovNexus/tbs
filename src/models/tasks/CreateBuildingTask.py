@@ -21,6 +21,7 @@ class CreateBuilding(Task):
     def execute(self, user_game_model, person: Person):
         user_game_model.experience_increaser.increase_experience(self.result_building.building_turns_count, person, person.craft_skill)
         user_game_model.buildings.append(self.result_building)
+        user_game_model.city_buffs.extends(self.result_building.apply_buffs)
 
     def on_append_to_task_schedule(self):
         self.not_allowed_buildings.append(self.result_building)

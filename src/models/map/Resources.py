@@ -182,9 +182,9 @@ class Plasteel(Resource):
         self.strong_multiplier = 2
 
 
-first_tier_food_resource = [Potatos(), Corns(), Lamb(), Fruits()]
+first_tier_food_resource = [Potatos(), Corns(), Fruits()]
 first_tier_material_resource = [Stone(), Wood(), Metal()]
-second_tier_food_resource = [Shugar(), Ambrosia(), Strobery(), Hop(), Sand(), Wool()]
+second_tier_food_resource = [Shugar(), Ambrosia(), Strobery(), Lamb(), Hop(), Sand(), Wool(), Pigs()]
 second_tier_material_resource = [Coal(), Mercury(), Redwood(), Spidersilk(), Silver(), Gold()]
 third_tier_material_resource = [Meefreel(), Plasteel()]
 
